@@ -12,16 +12,16 @@ mixin carousel(data)
 			span(class="sr-only") Next
 
 mixin carouselProduct(data, size, id, type)
-	div( id=id, class="carousel slide", data-ride="carousel")
+	div(id=id, class="carousel slide", data-ride="carousel")
 		div(class="carousel-inner")
-				- for(var i= 0; i< data.length; i+=size)
-					- var carouselContent = data.slice(i, i+size)
-						div(class=`carousel-item ${i == 0 && "active"} `)
-							.row
-								each item, index in carouselContent
-									if(!type)
-										div(class=` ${size==6 ? "col-xl-4 ": size==4 ?" col-lg-3 ": "col-xl-3 col-lg-4 " } col-md-6 col-12`)
-											+productVertical(item)
-									else
-										div(class=`col-12`)
-											+productHorizontal(item, "small")
+			- for(var i= 0; i< data.length; i+=size)
+				- var carouselContent = data.slice(i, i+size)
+					div(class=`carousel-item ${i == 0 && "active"} `)
+						.row
+							each item, index in carouselContent
+								if(!type)
+									div(class=` ${size==6 ? "col-xl-4 ": size==4 ?" col-lg-3 ": "col-xl-3 col-lg-4 " } col-md-6 col-12`)
+										+productVertical(item)
+								else
+									div(class=`col-12`)
+										+productHorizontal(item, "small")

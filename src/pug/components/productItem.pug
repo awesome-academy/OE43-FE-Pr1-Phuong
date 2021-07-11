@@ -42,15 +42,7 @@ mixin productHorizontal(data, size)
 					div(class=`product__content ${size== "small" && "product__content-small"}`)
 						.product__name 
 							h4.text-clamp.text-clamp--1= name 
-						.product__rate 
-							if(Math.floor(rate) < 5)
-								- for( var i=0; i< Math.floor(rate); i++)
-									i(class="fas fa-star")
-								- for(var i=0; i<(5-Math.floor(rate)); i++)
-									if(i==0)
-										i(class="fas fa-star-half-alt")
-									else
-										i(class="far fa-star")
+						+productRate(rate)
 						if(!size)
 							.product__decs 
 								p.text-clamp.text-clamp--2= desc
@@ -65,3 +57,4 @@ mixin productHorizontal(data, size)
 									i(class="fas fa-search")
 								.product__icon.icon.icon-round
 									i(class="fas fa-heart")
+
