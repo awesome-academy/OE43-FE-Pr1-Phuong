@@ -1,7 +1,35 @@
 extends ../base/base.pug
 
 include ../components/carousel.pug
+include ../components/productItem.pug
+
+block variables
+	- var [item1,item2,item3,item4,item5,item6] = products.hotProducts
 
 block content
 	section.carousel
 		+carousel(carousel)
+	section.hot-product
+		.container
+			.hot-product__container
+				+title("Sản phẩm nổi bật")
+			.hot-product__list
+				.row
+					.col-lg-6.col-12
+						.hot-product__left
+							.row
+								.col-12
+									+productVertical(item1)
+								.col-6
+									+productVertical(item2)
+								.col-6
+									+productVertical(item3)
+					.col-lg-6.col-12
+						.hot-product__right
+							.row
+								.col-6
+									+productVertical(item4)
+								.col-6
+									+productVertical(item5)
+								.col-12
+									+productVertical(item6)

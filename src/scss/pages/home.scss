@@ -1,0 +1,16 @@
+.product-title {
+	border-bottom: 1px $border-color solid;
+	margin-bottom: 3rem;
+	h2 {
+		display: inline-block;
+		margin-bottom: -1px;
+		padding-bottom: 1rem;
+		border-bottom: 2px $dark-green solid;
+		font-size: 1.6rem;
+		color: $dark-green;
+		font-weight: 600;
+	}
+}
+.hot-product {
+	padding-top: 4rem;
+}

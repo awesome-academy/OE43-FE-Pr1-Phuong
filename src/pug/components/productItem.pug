@@ -1,0 +1,32 @@
+mixin productRate(rate)
+	.product__rate
+		if(Math.floor(rate) < 5)
+			- for(var i=0; i< Math.floor(rate); i++)
+				i(class='fas fa-star')
+			- for(var i=0; i< (5-Math.floor(rate)); i++)
+				if(i==0)
+					i(class= "fas fa-star-half-alt")
+				else
+					i(class="far fa-star")
+		else
+			- for (var i=0; i< Math.floor(rate); i++)
+				i(class="fas fa-star")
+
+mixin productVertical({src, name, discount, rate,currentPrice,oldPrice})
+	.product__item
+		if(discount)
+			div(class=`product__discount ${discount=="New" && "product__discount-green"}`)= discount
+		.product__image
+			img(src=`./assets/images/${src}.png` alt='hoa')
+			.product__widget
+				button.button-round.button-green Mua ngay
+				.product__icon.icon.icon-round
+					i(class= "fas fa-search")
+		.product__content
+			.product__name
+				h4.text-clamp.text-clamp--1= name
+			+productRate(rate)
+			.product__price
+				span.product__price-current= `${currentPrice} đ`
+				if(oldPrice)
+					span.product__price-old= `${oldPrice} đ`
