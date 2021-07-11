@@ -5,3 +5,29 @@ mixin icon(classItem)
 mixin title(title)
 	.product-title
 		h2= title
+
+mixin titleSecond(title, idCarousel)
+	.product__title.product__title-second 
+		h2= title
+		.product__title-icon
+			.product__icon.icon.icon-round-sm(href=idCarousel ,role="button" data-slide="prev")
+				i(class="fas fa-chevron-left")
+			.product__icon.icon.icon-round-sm(href=idCarousel ,role="button" data-slide="next")
+				i(class="fas fa-chevron-right")
+
+mixin titleAndCarousel(name, title, id, data, size, type)
+	.d-md-block.d-none
+		if(type)
+			+title(title)
+		else 
+			+titleSecond(title, `#${id}`)
+	.d-md-none.d-block
+		+titleSecond(title,  `#${id}-md`)
+	div(class= `${name}__list`)
+		.d-md-block.d-none
+			+carouselProduct(data, size,id )
+		.d-md-none.d-block
+			if(type)
+				+carouselProduct(data, size, `${id}-md`, "small")
+			else
+				+carouselProduct(data, 1, `${id}-md`)

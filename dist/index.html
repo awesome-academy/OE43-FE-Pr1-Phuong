@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5e7d2a297a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>PDV</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-4 d-flex align-items-center">
+              <div class="header_time"><i class="far fa-clock"></i><span>Open time 8:00 - 18:00 Monday - Sunday</span></div>
+              <div class="header__social"> <a class="header__social-item header__top-icon" href="#"><i class="fab fa-facebook-f"></i></a><a class="header__social-item header__top-icon" href="#"><i class="fab fa-twitter"></i></a><a class="header__social-item header__top-icon" href="#"><i class="fab fa-telegram-plane"></i></a><a class="header__social-item header__top-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-8 d-flex align-items-center justify-content-end">
+              <div class="header__log-in header__top-icon"><i class="fas fa-user"> </i><a href="logIn.html"> Đăng nhập</a></div>
+              <div class="header-log-out header__top-icon"><i class="fas fa-user-plus"> </i><a href="register.html"> Đăng ký</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__main" style="background-image:url('./assets/background/bg-1.png')"> 
+        <div class="container"> 
+          <div class="row">
+            <div class="col-md-5">
+                  <div class="logo undefined"><a href="index.html"><img src="./assets/images/logo.png" alt=",">
+                      <p class="logo-text">Món quà từ thiên nhiên</p></a></div>
+            </div>
+            <div class="col-md-6 offset-md-1 d-flex justify-content-end align-items-center">
+              <div class="header__search">
+                <p class="header__phone"> <i class="fas fa-phone-alt"></i><span>Hỗ trợ : (04) 6675 2323 - (04) 3453 5335</span></p>
+                <div class="header__search-form">
+                  <form action="#">
+                    <input type="text" placeholder=" Tìm kiếm...">
+                    <button class="button"><i class="fas fa-search"></i></button>
+                  </form>
+                </div>
+              </div>
+              <div class="header__cart">
+                <button class="button"><a class="position-relative" href="#"><i class="fas fa-shopping-cart"></i><span class="header__cart-count">0 <span>Sản phẩm </span></span></a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header__nav">
+      <nav class="nav position__relative">
+        <input type="checkbox" id="toggle__nav">
+        <div id="collapse1">
+          <ul class="toggle__nav-list">
+                <li class="nav__item nav__respond-item"><a class="nav__item-link text-uppercase" href="/">Trang chủ</a>
+                </li>
+                <li class="nav__item nav__respond-item"><a class="nav__item-link text-uppercase" href="">Giới thiệu</a>
+                </li>
+                <li class="nav__item nav__respond-item"><a class="nav__item-link text-uppercase" href="/products.html">Sản phẩm</a><i class="fa fa-angle-down nav__item-icon"></i>
+                  <ul class="dropdown">
+                    <div class="row">
+                      <div class="col-lg-6 col-12 dropdown__list">
+                        <li class="dropdown__item">dropdown-item 1</li>
+                        <li class="dropdown__item">dropdown-item 1</li>
+                        <li class="dropdown__item">dropdown-item 1</li>
+                        <li class="dropdown__item">dropdown-item 1</li>
+                      </div>
+                      <div class="col-lg-6 col-12 dropdown__image"><img src="./assets/images/new-4.png" alt=","></div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="nav__item nav__respond-item"><a class="nav__item-link text-uppercase" href="">Sản phẩm mới</a><i class="fa fa-angle-down nav__item-icon"></i>
+                  <ul class="dropdown">
+                    <div class="row">
+                      <div class="col-12 dropdown__list">
+                        <li class="dropdown__item">dropdown-item</li>
+                        <li class="dropdown__item">dropdown-item</li>
+                        <li class="dropdown__item">dropdown-item</li>
+                        <li class="dropdown__item">dropdown-item</li>
+                        <li class="dropdown__item">dropdown-item</li>
+                        <li class="dropdown__item">dropdown-item</li>
+                        <li class="dropdown__item">dropdown-item</li>
+                        <li class="dropdown__item">dropdown-item</li>
+                        <li class="dropdown__item">dropdown-item</li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="nav__item nav__respond-item"><a class="nav__item-link text-uppercase" href="/news.html">Tin Tức</a>
+                </li>
+                <li class="nav__item nav__respond-item"><a class="nav__item-link text-uppercase" href="/contact.html">Liên hệ</a>
+                </li>
+            <button class="button button__close">
+              <label for="toggle__nav"></label>
+            </button>
+          </ul>
+          <label class="close__nav" for="toggle__nav"></label>
+        </div>
+        <div class="container">
+          <ul class="nav__list">
+            <li class="nav__item nav-item-respond"><a class="nav__item-link text-uppercase" href="/">Trang chủ</a>
+            </li>
+            <li class="nav__item nav-item-respond"><a class="nav__item-link text-uppercase" href="">Giới thiệu</a>
+            </li>
+            <li class="nav__item nav-item-respond"><a class="nav__item-link text-uppercase" href="/products.html">Sản phẩm</a><i class="fa fa-angle-down nav__item-icon"></i>
+              <ul class="dropdown">
+                <div class="row">
+                  <div class="col-lg-6 col-12 dropdown__list">
+                    <li class="dropdown__item">dropdown-item 1</li>
+                    <li class="dropdown__item">dropdown-item 1</li>
+                    <li class="dropdown__item">dropdown-item 1</li>
+                    <li class="dropdown__item">dropdown-item 1</li>
+                  </div>
+                  <div class="col-lg-6 col-12 dropdown__image"><img src="./assets/images/new-4.png" alt=","></div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav__item nav-item-respond"><a class="nav__item-link text-uppercase" href="">Sản phẩm mới</a><i class="fa fa-angle-down nav__item-icon"></i>
+              <ul class="dropdown">
+                <div class="row">
+                  <div class="col-12 dropdown__list">
+                    <li class="dropdown__item">dropdown-item</li>
+                    <li class="dropdown__item">dropdown-item</li>
+                    <li class="dropdown__item">dropdown-item</li>
+                    <li class="dropdown__item">dropdown-item</li>
+                    <li class="dropdown__item">dropdown-item</li>
+                    <li class="dropdown__item">dropdown-item</li>
+                    <li class="dropdown__item">dropdown-item</li>
+                    <li class="dropdown__item">dropdown-item</li>
+                    <li class="dropdown__item">dropdown-item</li>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav__item nav-item-respond"><a class="nav__item-link text-uppercase" href="/news.html">Tin Tức</a>
+            </li>
+            <li class="nav__item nav-item-respond"><a class="nav__item-link text-uppercase" href="/contact.html">Liên hệ</a>
+            </li>
+          </ul>
+          <ul class="nav__respond">
+            <div class="row">
+              <div class="col-sm-1 col-2 d-flex">
+                <button class="button">
+                  <label for="toggle__nav"><i class="fas fa-bars icon-hamburger"></i></label>
+                </button>
+              </div>
+              <div class="col-sm-8 col-10 offset-sm-3">
+                <div class="header__search header__search-respond">
+                  <div class="header__search-form">
+                    <form action="#">
+                      <input class="header__search-input" type="text" placeholder="Tìm kiếm...">
+                      <button class="button header__search-button"><i class="fas fa-search"></i></button>
+                    </form>
+                  </div>
+                  <div class="header__cart header__cart-respond">
+                    <button class="button"> <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="header__cart-count">0 <span>Sản phẩm</span></span></a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <section class="carousel">
+        <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active "><img class="d-block w-100" src="./assets/images/slide.png" alt="First slide"/></div>
+            <div class="carousel-item false "><img class="d-block w-100" src="./assets/images/slide.png" alt="First slide"/></div>
+            <div class="carousel-item false "><img class="d-block w-100" src="./assets/images/slide.png" alt="First slide"/></div>
+          </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+        </div>
+      </section>
+      <section class="hot-product">
+        <div class="container">
+          <div class="hot-product__container">
+                <div class="product__title">
+                  <h2>Sản phẩm nổi bật</h2>
+                </div>
+          </div>
+          <div class="hot-product__list">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div class="hot-product__left">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="product__item">
+                        <div class="product__discount product__discount-green">New</div>
+                        <div class="product__image"><img src="./assets/images/spx2-1.png" alt=","/>
+                          <div class="product__widget">
+                            <button class="button-round button-green" href="#">Mua ngay</button>
+                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                          </div>
+                        </div>
+                        <div class="product__content">
+                          <h4 class="text-clamp text-clamp--1">Cây chân chim</h4>
+                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                          </div>
+                          <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="product__item">
+                        <div class="product__discount false">-50%</div>
+                        <div class="product__image"><img src="./assets/images/spx2-2.png" alt=","/>
+                          <div class="product__widget">
+                            <button class="button-round button-green" href="#">Mua ngay</button>
+                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                          </div>
+                        </div>
+                        <div class="product__content">
+                          <h4 class="text-clamp text-clamp--1">Cây Dạ Lam</h4>
+                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="product__price"><span class="product__price-current">500.000 đ</span><span class="product__price-old">250.000 đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="product__item">
+                        <div class="product__discount product__discount-green">New</div>
+                        <div class="product__image"><img src="./assets/images/spx2-3.png" alt=","/>
+                          <div class="product__widget">
+                            <button class="button-round button-green" href="#">Mua ngay</button>
+                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                          </div>
+                        </div>
+                        <div class="product__content">
+                          <h4 class="text-clamp text-clamp--1">Cây Danh Dự</h4>
+                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                          </div>
+                          <div class="product__price"><span class="product__price-current">850.000 đ</span><span class="product__price-old">250.000 đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="hot-product__right">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="product__item">
+                        <div class="product__image"><img src="./assets/images/spx2-4.png" alt=","/>
+                          <div class="product__widget">
+                            <button class="button-round button-green" href="#">Mua ngay</button>
+                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                          </div>
+                        </div>
+                        <div class="product__content">
+                          <h4 class="text-clamp text-clamp--1">Cây cọ ta</h4>
+                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                          </div>
+                          <div class="product__price"><span class="product__price-current">150.000 đ</span><span class="product__price-old">250.000 đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="product__item">
+                        <div class="product__image"><img src="./assets/images/spx2-5.png" alt=","/>
+                          <div class="product__widget">
+                            <button class="button-round button-green" href="#">Mua ngay</button>
+                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                          </div>
+                        </div>
+                        <div class="product__content">
+                          <h4 class="text-clamp text-clamp--1">Cây dứa nhỏ</h4>
+                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="product__price"><span class="product__price-current">350.000 đ</span><span class="product__price-old">250.000 đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="product__item">
+                        <div class="product__discount false">-50%</div>
+                        <div class="product__image"><img src="./assets/images/spx2-6.png" alt=","/>
+                          <div class="product__widget">
+                            <button class="button-round button-green" href="#">Mua ngay</button>
+                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                          </div>
+                        </div>
+                        <div class="product__content">
+                          <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="product__price"><span class="product__price-current">1.000.000 đ</span><span class="product__price-old">250.000 đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="sale-buy">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-md-4">
+              <section class="popular-product">
+                <div class="popular-product d-md-block d-none"> 
+                      <div class="product__title">
+                        <h2>Sản phẩm mua nhiều</h2>
+                      </div>
+                  <div class="popular-product__list"> 
+                    <div class="   product__horizontal-small">
+                      <div class="row">
+                        <div class=" col-5  "> 
+                          <div class="product__image h-100"><img src="./assets/images/spx2-2.png" alt="anh"/></div>
+                        </div>
+                        <div class=" col-6 p-0  my-auto"> 
+                          <div class="product__content product__content-small">
+                            <div class="product__name"> 
+                              <h4 class="text-clamp text-clamp--1">Cây chân chim</h4>
+                            </div>
+                            <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="product__price"> <span class="product__price-current">250.000 đ</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="   product__horizontal-small">
+                      <div class="row">
+                        <div class=" col-5  "> 
+                          <div class="product__image h-100"><img src="./assets/images/spx2-3.png" alt="anh"/></div>
+                        </div>
+                        <div class=" col-6 p-0  my-auto"> 
+                          <div class="product__content product__content-small">
+                            <div class="product__name"> 
+                              <h4 class="text-clamp text-clamp--1">Cây Dạ Lam</h4>
+                            </div>
+                            <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="product__price"> <span class="product__price-current">100.000 đ</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="   product__horizontal-small">
+                      <div class="row">
+                        <div class=" col-5  "> 
+                          <div class="product__image h-100"><img src="./assets/images/spx2-4.png" alt="anh"/></div>
+                        </div>
+                        <div class=" col-6 p-0  my-auto"> 
+                          <div class="product__content product__content-small">
+                            <div class="product__name"> 
+                              <h4 class="text-clamp text-clamp--1">Cây Danh Dự</h4>
+                            </div>
+                            <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="product__price"> <span class="product__price-current">850.000 đ</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="   product__horizontal-small">
+                      <div class="row">
+                        <div class=" col-5  "> 
+                          <div class="product__image h-100"><img src="./assets/images/spx2-5.png" alt="anh"/></div>
+                        </div>
+                        <div class=" col-6 p-0  my-auto"> 
+                          <div class="product__content product__content-small">
+                            <div class="product__name"> 
+                              <h4 class="text-clamp text-clamp--1">Cây cọ ta</h4>
+                            </div>
+                            <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="product__price"> <span class="product__price-current">150.000 đ</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="   product__horizontal-small">
+                      <div class="row">
+                        <div class=" col-5  "> 
+                          <div class="product__image h-100"><img src="./assets/images/spx2-6.png" alt="anh"/></div>
+                        </div>
+                        <div class=" col-6 p-0  my-auto"> 
+                          <div class="product__content product__content-small">
+                            <div class="product__name"> 
+                              <h4 class="text-clamp text-clamp--1">Cây dứa nhỏ</h4>
+                            </div>
+                            <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="product__price"> <span class="product__price-current">350.000 đ</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="   product__horizontal-small">
+                      <div class="row">
+                        <div class=" col-5  "> 
+                          <div class="product__image h-100"><img src="./assets/images/spx2-7.png" alt="anh"/></div>
+                        </div>
+                        <div class=" col-6 p-0  my-auto"> 
+                          <div class="product__content product__content-small">
+                            <div class="product__name"> 
+                              <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                            </div>
+                            <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="product__price"> <span class="product__price-current">600.000 đ</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular-product d-md-none d-block">
+                  <div class="popular-product d-md-none d-block"> 
+                        <div class="d-md-block d-none">
+                              <div class="product__title">
+                                <h2>Sản phẩm mua  nhiều</h2>
+                              </div>
+                        </div>
+                        <div class="d-md-none d-block">
+                              <div class="product__title product__title-second"> 
+                                <h2>Sản phẩm mua  nhiều</h2>
+                                <div class="product__title-icon">
+                                  <div class="product__icon icon icon-round-sm" href="#popularProducts-md" role="button" data-slide="prev"><i class="fas fa-chevron-left"></i></div>
+                                  <div class="product__icon icon icon-round-sm" href="#popularProducts-md" role="button" data-slide="next"><i class="fas fa-chevron-right"></i></div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="popular-product__list">
+                          <div class="d-md-block d-none">
+                            <div class="carousel slide" id="popularProducts" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active ">
+                                  <div class="row">
+                                    <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                      <div class="product__item">
+                                        <div class="product__image"><img src="./assets/images/spx2-2.png" alt=","/>
+                                          <div class="product__widget">
+                                            <button class="button-round button-green" href="#">Mua ngay</button>
+                                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                          </div>
+                                        </div>
+                                        <div class="product__content">
+                                          <h4 class="text-clamp text-clamp--1">Cây chân chim</h4>
+                                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                          </div>
+                                          <div class="product__price"><span class="product__price-current">250.000 đ</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                      <div class="product__item">
+                                        <div class="product__image"><img src="./assets/images/spx2-3.png" alt=","/>
+                                          <div class="product__widget">
+                                            <button class="button-round button-green" href="#">Mua ngay</button>
+                                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                          </div>
+                                        </div>
+                                        <div class="product__content">
+                                          <h4 class="text-clamp text-clamp--1">Cây Dạ Lam</h4>
+                                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                          </div>
+                                          <div class="product__price"><span class="product__price-current">100.000 đ</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                      <div class="product__item">
+                                        <div class="product__image"><img src="./assets/images/spx2-4.png" alt=","/>
+                                          <div class="product__widget">
+                                            <button class="button-round button-green" href="#">Mua ngay</button>
+                                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                          </div>
+                                        </div>
+                                        <div class="product__content">
+                                          <h4 class="text-clamp text-clamp--1">Cây Danh Dự</h4>
+                                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                          </div>
+                                          <div class="product__price"><span class="product__price-current">850.000 đ</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="carousel-item false ">
+                                  <div class="row">
+                                    <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                      <div class="product__item">
+                                        <div class="product__image"><img src="./assets/images/spx2-5.png" alt=","/>
+                                          <div class="product__widget">
+                                            <button class="button-round button-green" href="#">Mua ngay</button>
+                                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                          </div>
+                                        </div>
+                                        <div class="product__content">
+                                          <h4 class="text-clamp text-clamp--1">Cây cọ ta</h4>
+                                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                          </div>
+                                          <div class="product__price"><span class="product__price-current">150.000 đ</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                      <div class="product__item">
+                                        <div class="product__image"><img src="./assets/images/spx2-6.png" alt=","/>
+                                          <div class="product__widget">
+                                            <button class="button-round button-green" href="#">Mua ngay</button>
+                                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                          </div>
+                                        </div>
+                                        <div class="product__content">
+                                          <h4 class="text-clamp text-clamp--1">Cây dứa nhỏ</h4>
+                                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                          </div>
+                                          <div class="product__price"><span class="product__price-current">350.000 đ</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                      <div class="product__item">
+                                        <div class="product__image"><img src="./assets/images/spx2-7.png" alt=","/>
+                                          <div class="product__widget">
+                                            <button class="button-round button-green" href="#">Mua ngay</button>
+                                            <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                          </div>
+                                        </div>
+                                        <div class="product__content">
+                                          <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                                          <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                          </div>
+                                          <div class="product__price"><span class="product__price-current">600.000 đ</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-md-none d-block">
+                            <div class="carousel slide" id="popularProducts-md" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active ">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="   product__horizontal-small">
+                                        <div class="row">
+                                          <div class=" col-5  "> 
+                                            <div class="product__image h-100"><img src="./assets/images/spx2-2.png" alt="anh"/></div>
+                                          </div>
+                                          <div class=" col-6 p-0  my-auto"> 
+                                            <div class="product__content product__content-small">
+                                              <div class="product__name"> 
+                                                <h4 class="text-clamp text-clamp--1">Cây chân chim</h4>
+                                              </div>
+                                              <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                              </div>
+                                              <div class="product__price"> <span class="product__price-current">250.000 đ</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="   product__horizontal-small">
+                                        <div class="row">
+                                          <div class=" col-5  "> 
+                                            <div class="product__image h-100"><img src="./assets/images/spx2-3.png" alt="anh"/></div>
+                                          </div>
+                                          <div class=" col-6 p-0  my-auto"> 
+                                            <div class="product__content product__content-small">
+                                              <div class="product__name"> 
+                                                <h4 class="text-clamp text-clamp--1">Cây Dạ Lam</h4>
+                                              </div>
+                                              <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                              </div>
+                                              <div class="product__price"> <span class="product__price-current">100.000 đ</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="   product__horizontal-small">
+                                        <div class="row">
+                                          <div class=" col-5  "> 
+                                            <div class="product__image h-100"><img src="./assets/images/spx2-4.png" alt="anh"/></div>
+                                          </div>
+                                          <div class=" col-6 p-0  my-auto"> 
+                                            <div class="product__content product__content-small">
+                                              <div class="product__name"> 
+                                                <h4 class="text-clamp text-clamp--1">Cây Danh Dự</h4>
+                                              </div>
+                                              <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                              </div>
+                                              <div class="product__price"> <span class="product__price-current">850.000 đ</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="carousel-item false ">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="   product__horizontal-small">
+                                        <div class="row">
+                                          <div class=" col-5  "> 
+                                            <div class="product__image h-100"><img src="./assets/images/spx2-5.png" alt="anh"/></div>
+                                          </div>
+                                          <div class=" col-6 p-0  my-auto"> 
+                                            <div class="product__content product__content-small">
+                                              <div class="product__name"> 
+                                                <h4 class="text-clamp text-clamp--1">Cây cọ ta</h4>
+                                              </div>
+                                              <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                              </div>
+                                              <div class="product__price"> <span class="product__price-current">150.000 đ</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="   product__horizontal-small">
+                                        <div class="row">
+                                          <div class=" col-5  "> 
+                                            <div class="product__image h-100"><img src="./assets/images/spx2-6.png" alt="anh"/></div>
+                                          </div>
+                                          <div class=" col-6 p-0  my-auto"> 
+                                            <div class="product__content product__content-small">
+                                              <div class="product__name"> 
+                                                <h4 class="text-clamp text-clamp--1">Cây dứa nhỏ</h4>
+                                              </div>
+                                              <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                              </div>
+                                              <div class="product__price"> <span class="product__price-current">350.000 đ</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="   product__horizontal-small">
+                                        <div class="row">
+                                          <div class=" col-5  "> 
+                                            <div class="product__image h-100"><img src="./assets/images/spx2-7.png" alt="anh"/></div>
+                                          </div>
+                                          <div class=" col-6 p-0  my-auto"> 
+                                            <div class="product__content product__content-small">
+                                              <div class="product__name"> 
+                                                <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                                              </div>
+                                              <div class="product__rate"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                              </div>
+                                              <div class="product__price"> <span class="product__price-current">600.000 đ</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-xl-9 col-md-8">
+              <section class="sale-product">
+                    <div class="d-md-block d-none">
+                          <div class="product__title product__title-second"> 
+                            <h2>Sản phẩm khuyến mãi</h2>
+                            <div class="product__title-icon">
+                              <div class="product__icon icon icon-round-sm" href="#sale-product " role="button" data-slide="prev"><i class="fas fa-chevron-left"></i></div>
+                              <div class="product__icon icon icon-round-sm" href="#sale-product " role="button" data-slide="next"><i class="fas fa-chevron-right"></i></div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="d-md-none d-block">
+                          <div class="product__title product__title-second"> 
+                            <h2>Sản phẩm khuyến mãi</h2>
+                            <div class="product__title-icon">
+                              <div class="product__icon icon icon-round-sm" href="#sale-product -md" role="button" data-slide="prev"><i class="fas fa-chevron-left"></i></div>
+                              <div class="product__icon icon icon-round-sm" href="#sale-product -md" role="button" data-slide="next"><i class="fas fa-chevron-right"></i></div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="popular-product__list">
+                      <div class="d-md-block d-none">
+                        <div class="carousel slide" id="sale-product " data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active ">
+                              <div class="row">
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__discount product__discount-green">New</div>
+                                    <div class="product__image"><img src="./assets/images/spx2-1.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây chân chim</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-2.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây chân chim</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__discount product__discount-green">New</div>
+                                    <div class="product__image"><img src="./assets/images/spx2-3.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây chân chim</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-4.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây xương rồng</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-5.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây Dạ Lam</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__discount false">-45%</div>
+                                    <div class="product__image"><img src="./assets/images/spx2-6.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây Danh Dự</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-7.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây cọ ta</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-8.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây Dạ Lam</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-9.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây dứa nhỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-10.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-11.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây Dạ Lam</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-12.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây dứa nhỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-13.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-14.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class=" col-xl-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-15.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-md-none d-block">
+                        <div class="carousel slide" id="sale-product -md" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__discount product__discount-green">New</div>
+                                    <div class="product__image"><img src="./assets/images/spx2-1.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây chân chim</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-2.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây chân chim</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__discount product__discount-green">New</div>
+                                    <div class="product__image"><img src="./assets/images/spx2-3.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây chân chim</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-4.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây xương rồng</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-5.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây Dạ Lam</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__discount false">-45%</div>
+                                    <div class="product__image"><img src="./assets/images/spx2-6.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây Danh Dự</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-7.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây cọ ta</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-8.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây Dạ Lam</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-9.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây dứa nhỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-10.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-11.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây Dạ Lam</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">250.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-12.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây dứa nhỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-13.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-14.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item false ">
+                              <div class="row">
+                                <div class=" col-xl-3 col-lg-4  col-md-6 col-12">
+                                  <div class="product__item">
+                                    <div class="product__image"><img src="./assets/images/spx2-15.png" alt=","/>
+                                      <div class="product__widget">
+                                        <button class="button-round button-green" href="#">Mua ngay</button>
+                                        <div class="product__icon icon icon-round"><i class="fas fa-search"></i></div>
+                                      </div>
+                                    </div>
+                                    <div class="product__content">
+                                      <h4 class="text-clamp text-clamp--1">Cây đa búp đỏ</h4>
+                                      <div class="product__rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      <div class="product__price"><span class="product__price-current">280.000 đ</span><span class="product__price-old">250.000 đ</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
