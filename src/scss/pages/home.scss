@@ -10,7 +10,37 @@
 		color: $dark-green;
 		font-weight: 600;
 	}
+	&-second {
+        @include flex;
+    }
+    &-icon {
+        @include flex-align-center;
+        gap: 0.6rem;
+    }
 }
 .hot-product {
 	padding-top: 4rem;
+}
+
+.popular-product {
+	height: calc(100% - 3rem);
+	padding-bottom: 3rem;
+	max-height: 83rem;
+	&__list {
+		height: calc(100% - 6.4rem);
+		min-height: 73rem;
+
+		@include respond-to("md") {
+			min-height: 0;
+		}
+	}
+	.product__horizontal-small {
+		@include respond-to("md") {
+			height: auto;
+		}
+	}
+}
+
+.new-product {
+    padding-bottom: 3rem;
 }

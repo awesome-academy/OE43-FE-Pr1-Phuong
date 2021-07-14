@@ -5,6 +5,8 @@ include ../components/productItem.pug
 
 block variables
 	- var [item1,item2,item3,item4,item5,item6] = products.hotProducts
+	- var popularProducts = products.popularProducts
+	- var newProducts = products.newProducts
 
 block content
 	section.carousel
@@ -33,3 +35,20 @@ block content
 									+productVertical(item5)
 								.col-12
 									+productVertical(item6)
+	.sale-buy
+		.container
+			.row
+				.col-xl-3.col-md-4
+					section.popular-product
+							.popular-product.d-md-block.d-none 
+								+title("Sản phẩm mua nhiều")
+								.popular-product__list 
+									each item in popularProducts
+										+productHorizontal(item, "small")
+							.popular-product.d-md-none.d-block
+								.popular-product.d-md-none.d-block 
+									+titleAndCarousel("popular-product", "Sản phẩm khuyến mãi","popularProducts", popularProducts, 3,"horizontal" )
+				.col-xl-9.col-md-8
+					section.sale-product
+						+titleAndCarousel("popular-product", "Sản phẩm khuyến mãi","sale-product ", newProducts, 6 )
+					
