@@ -50,11 +50,10 @@ mixin productHorizontal(data, size)
 							span.product__price-current=  `${currentPrice} đ`
 							if(oldPrice)
 								span.product__price-old= `${oldPrice} đ`
-						if (size !="small")
+						if (!size)
 							.product__widget-horizontal  
 								a.button.button-round.button-green  Mua ngay 
 								.product__icon.icon.icon-round
 									i(class="fas fa-search")
 								.product__icon.icon.icon-round
 									i(class="fas fa-heart")
-
