@@ -25,3 +25,15 @@ mixin carouselProduct(data, size, id, type)
 								else
 									div(class=`col-12`)
 										+productHorizontal(item, "small")
+
+mixin carouselImage(data, size, id)
+	div( id=id, class="carousel slide", data-ride="carousel")
+		div(class="carousel-inner")
+				- for(var i= 0; i< data.length; i+=size)
+					- var carouselContent = data.slice(i, i+size)
+						if(carouselContent.length == size)
+							div(class=`carousel-item carousel-image ${i == 0 && "active"} `)
+								.row.mx-0
+									each item, index in carouselContent
+										div(class=` ${size==5 ? "carousel-image__item-row ":"col-md-2 col-12 pl-0  pb-1 pb-md-0  "}`)
+											img(src=`./assets/images/${item.src}.png`, alt="carousel-img", class="carousel-img ")
